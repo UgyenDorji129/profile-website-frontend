@@ -1,5 +1,5 @@
 import { ArrowLeft} from '@mui/icons-material';
-import {Stack, styled } from '@mui/material';
+import {Box, Stack, styled } from '@mui/material';
 import React, { useState } from 'react';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -16,9 +16,7 @@ const MenuDiv = styled("div")({
   background: theme.palette.primary.main,
   color:"white",
   borderRadius:"40px",
-  margin:"2px",
-  height:"42px",
-  width:"42px",
+  margin:"15px",
   display:"flex",
   alignItems:"center",
   justifyContent:"center",
@@ -27,7 +25,7 @@ const MenuDiv = styled("div")({
 const DirectionButton = styled(Stack)({
   display:"flex", 
   alignItems:"center", 
-  marginTop:"5px",
+  margin:"15px",
   background: theme.palette.primary.main,
   color:"white",
   borderRadius:"40px",
@@ -39,7 +37,7 @@ const StackMobile = styled(Stack)({
   justifyContent:"space-between",
   alignContent:"space-between",
   height:`100%`,
-  alignItems:"flex-end"
+  alignItems:"flex-end",
 });
 
 
@@ -53,10 +51,11 @@ const MobileMenu = () => {
 
   return (
         <StackMobile>
-            <MenuDiv ><MenuIcon sx={{fontSize:"35px", margin:"8px"}} onClick={()=>setOpen(true)}/></MenuDiv>
+            <MenuDiv ><MenuIcon sx={{fontSize:"35px", margin:"10px"}} onClick={()=>setOpen(true)}/></MenuDiv>
             <MobileDrawer open ={controller} />
             <DirectionButton>
-            <ArrowRightIcon sx={{fontSize:"35px", margin:"8px"}} onClick={()=>{
+            
+            <ArrowRightIcon sx={{fontSize:"35px", margin:"10px"}} onClick={()=>{
               var curIndex = 0;
               for(var i = 0; i < 6; i++){
                 if(screens[i] === loc.pathname){
@@ -75,6 +74,7 @@ const MobileMenu = () => {
               movBackward(curIndex, nav);
             }}/>
             </DirectionButton>
+            
         </StackMobile>
     
   );
