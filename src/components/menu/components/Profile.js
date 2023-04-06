@@ -1,5 +1,5 @@
 import { Avatar, Typography, Box, styled, } from '@mui/material';
-import imageUrl from '/Users/ugyendorji/Documents/React/profile-website/src/assets/do.png';
+import imageUrl from '../../../assets/do.png';
 import React from 'react';
 
 const ProfileBox = styled(Box)({

@@ -105,7 +105,7 @@ const MobileDrawer = ({open}) => {
             <LinkedIn sx={{color:"white",margin:1.5}}/>
             <GitHub sx={{color:"white",margin:1.5}}/>
         </IconBox>
-
+            
         <CVButton/>
 
       </Drawer>
