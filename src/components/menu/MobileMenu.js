@@ -1,7 +1,6 @@
 import { ArrowLeft} from '@mui/icons-material';
 import {Stack, styled } from '@mui/material';
 import React, { useState } from 'react';
-import { Box } from '@mui/system';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MenuIcon from '@mui/icons-material/Menu';
 import theme from '../../theme';
