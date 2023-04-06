@@ -1,0 +1,46 @@
+import BookIcon from '@mui/icons-material/Book';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import { Home, Mail, Person, SchoolSharp } from '@mui/icons-material';
+import theme from '../../../theme';
+
+const DesktopMenuItems = [
+    { 
+      icon: Home, 
+      title:"Home", 
+      sx:{fontSize:"50px", margin:"10px", color:theme.palette.primary.main}, 
+      path: '/' 
+    },
+    { 
+      icon: Person, 
+      title:"About", 
+      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main}, 
+      path: '/about' 
+    },
+    { 
+      icon: SchoolSharp,
+      title:"Resume", 
+      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main}, 
+      path: '/resume' 
+    },
+    { 
+      icon: BusinessCenterIcon,
+      title:"Portfolio",
+      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main}, 
+      path: '/portfolio' 
+    },
+    { 
+      icon: BookIcon, 
+      title:"Blog",
+      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main}, 
+      path: '/blog' 
+    },
+    { 
+      icon: Mail, 
+      title:"Contact",
+      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main}, 
+      path: '/contact' 
+    },
+    
+  ];
+
+export default DesktopMenuItems;
