@@ -26,7 +26,7 @@ const HomeScreen = () => {
   var index = generateRandom(0,7);
 
   useEffect(() => {
-    axios.get("http://localhost:3005/getHome").then((response) => {  
+    axios.get("https://profile-website-backend-production.up.railway.app/getHome").then((response) => {  
     setResult(response.data.data);
     }).catch((e)=>{
       setError(true);

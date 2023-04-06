@@ -26,7 +26,7 @@ const Blog = () => {
     const [error, setError] = useState(false);
 
     useEffect(()=>{
-        axios.get("http://localhost:3005/getBlog").then((response) => {
+        axios.get("https://profile-website-backend-production.up.railway.app/getBlog").then((response) => {
           setResult(response.data.data);
         }).catch((e)=>{
             setError(true);

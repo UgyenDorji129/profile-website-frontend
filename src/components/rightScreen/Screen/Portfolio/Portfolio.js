@@ -34,7 +34,7 @@ const Portfolio = () => {
   var index = generateRandom(0,7);
   
   useEffect(()=>{
-    axios.get("http://localhost:3005/getPortfolio").then((response) => {
+    axios.get("https://profile-website-backend-production.up.railway.app/getPortfolio").then((response) => {
       setResult(response.data.data);
     }).catch((e)=>{
       setError(true);

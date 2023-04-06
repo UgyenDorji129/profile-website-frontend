@@ -40,11 +40,11 @@ const Resume = () => {
   }
   
   useEffect(()=>{
-    fetchRequest("http://localhost:3005/getEducation", setEducation);
-    fetchRequest("http://localhost:3005/getFrame", setFrame);
-    fetchRequest("http://localhost:3005/getPrograming", setProg);
-    fetchRequest("http://localhost:3005/getOtherSkill", setKnow);
-    fetchRequest("http://localhost:3005/getCertificate", setCerti);
+    fetchRequest("https://profile-website-backend-production.up.railway.app/getEducation", setEducation);
+    fetchRequest("https://profile-website-backend-production.up.railway.app/getFrame", setFrame);
+    fetchRequest("https://profile-website-backend-production.up.railway.app/getPrograming", setProg);
+    fetchRequest("https://profile-website-backend-production.up.railway.app/getOtherSkill", setKnow);
+    fetchRequest("https://profile-website-backend-production.up.railway.app/getCertificate", setCerti);
     setshow(true);
   },[]);
 

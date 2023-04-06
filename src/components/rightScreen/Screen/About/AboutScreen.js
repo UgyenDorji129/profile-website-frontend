@@ -33,7 +33,7 @@ const AboutScreen = () => {
 
   function fetchRequest(url, setData, ){
    
-    axios.get("http://localhost:3005"+url).then((response) => { 
+    axios.get("https://profile-website-backend-production.up.railway.app"+url).then((response) => { 
         setData(response.data.data);
       }).catch((e)=>{
       setError(true);
