@@ -38,7 +38,8 @@ const StackMobile = styled(Stack)({
   display:"flex", 
   flexDirection:"column", 
   justifyContent:"space-between",
-  minHeight:"100vh", 
+  alignContent:"space-between",
+  height:`100%`,
   alignItems:"flex-end"
 });
 
