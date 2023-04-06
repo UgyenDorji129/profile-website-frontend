@@ -5,7 +5,7 @@ const ProgressBar = ({data}) => {
   return (
     <Box sx={{marginTop:"20px"}}>
         <Box sx={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
-            <Typography fontWeight={"bold"}>{data.name}</Typography>
+            <Typography fontWeight={"bold"}>{data.language}</Typography>
             <Typography>{data.percentage}%</Typography>
         </Box>
         <LinearProgress variant="determinate" value={data.percentage} />

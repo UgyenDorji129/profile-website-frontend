@@ -16,7 +16,7 @@ const RightScreen = () => {
 
   return (
   
-      <Box sx={{height:{xs:"100vh", md:"75vh"}, overflow:"auto", width:"100%"}}>
+      <Box sx={{height:{xs:"100svh", md:"75vh"}, overflow:"auto", padding:"10px"}}>
       <Routes>
         <Route exact path={"/"} element={<HomeScreen/>}/>
         <Route exact path={"/about"} element={<AboutScreen/>}/>
