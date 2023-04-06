@@ -73,11 +73,10 @@ const MobileDrawer = ({open}) => {
         }}
         anchor="right"
         variant="temporary"
-        height="100vh"
         open={open[0]}
         onClose={()=>{open[1](false)}}
       >
-        <Box sx={{display:"flex", flexDirection:"column", height:"100vh", justifyContent:"space-around", flexWrap:"nowrap"}}>
+        <Box sx={{display:"flex", flexDirection:"column", justifyContent:"space-around", flexWrap:"nowrap"}}>
         <Box sx={{display:"flex", justifyContent:"end", alignItems:"end"}}><CloseIcon sx={{color:"white", fontSize:"35px", padding:"10px"}} onClick={()=>open[1](false)}/></Box>
         <Profile/> 
 
