@@ -21,7 +21,7 @@ function App() {
                 <Grid item xs={12} md={9} sx={{borderRadius:"24px", background:"white", display: "flex", justifyContent:"center", alignItems:"center", }}><RightScreen/></Grid>
             </Grid>
             <Grid item   md={1}  sx={{display:{xs:"none", md:"block"}, borderRadius:"24px", bgcolor:"white", color:theme.palette.primary.main}}><DesktopMenu/></Grid>
-            <Grid item   xs={1}  sx={{display:{xs:"block", md:"none"}, borderRadius:"24px", bgcolor:"white", color:theme.palette.primary.main}}><MobileMenu/></Grid>
+            <Grid item   xs={1}  sx={{display:{xs:"block", md:"none"}, borderRadius:"24px", bgcolor:"white", color:theme.palette.primary.main, height:"100%"}}><MobileMenu/></Grid>
           </Grid>
         </Box>
       </Router>

@@ -38,7 +38,7 @@ const StackMobile = styled(Stack)({
   display:"flex", 
   flexDirection:"column", 
   justifyContent:"space-between",
-  height:"100vh", 
+  minHeight:"100vh", 
   alignItems:"flex-end"
 });
 
@@ -52,10 +52,9 @@ const MobileMenu = () => {
 
 
   return (
-    <Box padding={"4px"}>
         <StackMobile>
             <MenuDiv ><MenuIcon sx={{fontSize:"35px", margin:"8px"}} onClick={()=>setOpen(true)}/></MenuDiv>
-            <MobileDrawer open ={controller}/>
+            <MobileDrawer open ={controller} />
             <DirectionButton>
             <ArrowRightIcon sx={{fontSize:"35px", margin:"8px"}} onClick={()=>{
               var curIndex = 0;
@@ -77,7 +76,6 @@ const MobileMenu = () => {
             }}/>
             </DirectionButton>
         </StackMobile>
-    </Box>
     
   );
 }

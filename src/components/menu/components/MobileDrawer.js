@@ -12,7 +12,6 @@ const IconBox = styled(Box)({
     display:"flex",
     justifyContent:"center",
     alignItems:"center",
-    marginTop:"20px"
 });
 
 
@@ -66,20 +65,23 @@ const MobileDrawer = ({open}) => {
         sx={{
           width: 290,
           background:theme.palette.primary.main,
-          display:{md:"none"}
+          display:{md:"none"},
+          flexWrap:"nowrap"
         }}
         PaperProps={{
-          sx: { width: 300,background:theme.palette.primary.main },
+          sx: { width: 300,background:theme.palette.primary.main, flexWrap:"nowrap" },
         }}
         anchor="right"
         variant="temporary"
+        height="100vh"
         open={open[0]}
         onClose={()=>{open[1](false)}}
       >
+        <Box sx={{display:"flex", flexDirection:"column", height:"100vh", justifyContent:"space-around", flexWrap:"nowrap"}}>
         <Box sx={{display:"flex", justifyContent:"end", alignItems:"end"}}><CloseIcon sx={{color:"white", fontSize:"35px", padding:"10px"}} onClick={()=>open[1](false)}/></Box>
         <Profile/> 
 
-        <List sx={{marginTop:"20px"}}>
+        <List >
 
         {MenuItem.map((item, index)=>(
             <ListItem
@@ -107,6 +109,7 @@ const MobileDrawer = ({open}) => {
         </IconBox>
             
         <CVButton/>
+        </Box>
 
       </Drawer>
   )

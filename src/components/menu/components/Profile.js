@@ -8,7 +8,6 @@ const ProfileBox = styled(Box)({
     justifyContent:"center",
     alignItems:"center",
     textAlign:"center",
-    marginTop:"30px"
 });
 
 const Profile = () => {
