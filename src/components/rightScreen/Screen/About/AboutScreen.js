@@ -29,7 +29,7 @@ const AboutScreen = () => {
   const [funfact, setFunfact] = useState(null);
   const [error, setError] = useState(false);
 
-  var index = generateRandom(0,7);
+  var index = 1;
 
   function fetchRequest(url, setData, ){
    

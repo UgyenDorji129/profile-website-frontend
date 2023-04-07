@@ -5,7 +5,7 @@ import React from 'react'
 const EduTimeLine = ({data}) => {
   return (
     <Timeline sx={{[`& .${timelineOppositeContentClasses.root}`]: {
-        flex: 0.2,
+        flex: 0,
          }}}>
         <TimelineItem >
         <TimelineOppositeContent color="text.secondary">{data.year}</TimelineOppositeContent>

@@ -15,7 +15,8 @@ const MainBox = styled(Box)(({param})=>({
   flexDirection:"column", 
   height:"100%",
   visibility: !param.show && "hidden",
-  animation: param.show && `${animation[param.index].style} ${animation[param.index].duration}`
+  animation: param.show && `${animation[param.index].style} ${animation[param.index].duration}`,
+  padding:"30px",
   
 }));
 
@@ -23,7 +24,7 @@ const HomeScreen = () => {
   const [show,setshow] = useState(false);
   const [result,setResult] = useState(null);
   const [error, setError] = useState(false);
-  var index = generateRandom(0,7);
+  var index = 0;
 
   useEffect(() => {
     axios.get("https://profile-website-backend-production.up.railway.app/getHome").then((response) => {  

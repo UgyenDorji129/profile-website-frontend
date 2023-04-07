@@ -21,7 +21,7 @@ const BlogBox = styled(Box)(({param})=>({
 const Blog = () => {
 
    const [show,setshow] = useState(false);
-    var index = generateRandom(0,7);
+    var index = 4;
     const [result, setResult] = useState(null);
     const [error, setError] = useState(false);
 

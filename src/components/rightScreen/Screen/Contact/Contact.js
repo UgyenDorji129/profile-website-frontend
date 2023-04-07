@@ -28,7 +28,7 @@ const Contact = () => {
       const cons = [con1, con2, con3, con4];
 
       const [show,setshow] = useState(false);
-      var index = generateRandom(0,7);;
+      var index = 5;
   
       useEffect(()=>{
          setTimeout(()=>{

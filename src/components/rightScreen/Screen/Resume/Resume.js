@@ -29,7 +29,7 @@ const Resume = () => {
   const [certi, setCerti] = useState(null);
   const [error, setError] = useState(false);
 
-  var index = generateRandom(0,7);
+  var index = 2;
 
   function fetchRequest(url, setFunction){
     axios.get(url).then((response) => { 
