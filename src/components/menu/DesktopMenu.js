@@ -51,7 +51,8 @@ const DesktopMenu = () => {
             </List>
         </StackDesktop>
         <StackDesktop>
-            <ArrowRightIcon sx={{fontSize:"50px", margin:"10px"}} onClick={()=>{
+          <Tooltip title={"next"} placement="left" arrow PopperProps={{sx:{background:"white"}}} >
+            <ArrowRightIcon sx={{fontSize:"50px", margin:"10px",cursor:"pointer"}} onClick={()=>{
               var curIndex = 0;
               for(var i = 0; i < 6; i++){
                 if(screens[i] === loc.pathname){
@@ -60,7 +61,9 @@ const DesktopMenu = () => {
               }
               movForward(curIndex, nav);
             }}/>
-            <ArrowLeft sx={{fontSize:"50px", margin:"10px"}} onClick={()=>{
+          </Tooltip>
+          <Tooltip title={"previous"} placement="left" arrow PopperProps={{sx:{background:"white"}}} >
+            <ArrowLeft sx={{fontSize:"50px", margin:"10px",cursor:"pointer"}} onClick={()=>{
               var curIndex = 0;
               for(var i = 0; i < 6; i++){
                 if(screens[i] === loc.pathname){
@@ -69,6 +72,7 @@ const DesktopMenu = () => {
               }
               movBackward(curIndex, nav);
             }}/>
+          </Tooltip>
         </StackDesktop>
     </Box> 
   );

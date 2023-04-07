@@ -12,19 +12,17 @@ import Contact from './Screen/Contact/Contact';
 
 
 const RightScreen = () => {
-  
-
   return (
   
-      <Box sx={{height:{xs:"100svh", md:"75svh"}, overflow:"auto", padding:"10px"}}>
-      <Routes>
-        <Route exact path={"/"} element={<HomeScreen/>}/>
-        <Route exact path={"/about"} element={<AboutScreen/>}/>
-        <Route exact path={"/resume"} element={<Resume/>}/>
-        <Route exact path={"/portfolio"} element={<Portfolio/>}/>
-        <Route exact path={"/blog"} element={<Blog/>}/>
-        <Route exact path={"/contact"} element={<Contact/>}/>
-      </Routes>
+      <Box sx={{height:{xs:"100%",md:"75vh"} ,overflow:"auto", padding:"10px"}}>
+        <Routes>
+          <Route exact path={"/"} element={<HomeScreen/>}/>
+          <Route exact path={"/about"} element={<AboutScreen/>}/>
+          <Route exact path={"/resume"} element={<Resume/>}/>
+          <Route exact path={"/portfolio"} element={<Portfolio/>}/>
+          <Route exact path={"/blog"} element={<Blog/>}/>
+          <Route exact path={"/contact"} element={<Contact/>}/>
+        </Routes>
       </Box>
   )
 }

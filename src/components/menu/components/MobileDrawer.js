@@ -1,4 +1,4 @@
-import { Box, Drawer, List, ListItem, ListItemText, Typography, styled } from '@mui/material';
+import { Box, Drawer, Link, List, ListItem, ListItemText, Typography, styled } from '@mui/material';
 import React from 'react';
 import theme from '../../../theme';
 import { Facebook, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
@@ -16,6 +16,12 @@ const IconBox = styled(Box)({
 
 
 const MobileDrawer = ({open}) => {
+  const icons = [
+    {icon: Facebook, link:"https://www.facebook.com/hdhdjfjrkndhsjs"},
+    {icon: Instagram, link:"https://www.instagram.com/__ugyen___/"},
+    {icon: LinkedIn, link:"https://www.linkedin.com/in/ugyen-dorji-78472a1a2/"},
+    {icon: GitHub, link:"https://github.com/UgyenDorji129"}];
+
   const MenuItem = [
     {
         name:"Home",
@@ -77,37 +83,40 @@ const MobileDrawer = ({open}) => {
         onClose={()=>{open[1](false)}}
       >
         <Box sx={{display:"flex", flexDirection:"column", justifyContent:"space-around", flexWrap:"nowrap"}}>
-        <Box sx={{display:"flex", justifyContent:"end", alignItems:"end"}}><CloseIcon sx={{color:"white", fontSize:"35px", padding:"10px"}} onClick={()=>open[1](false)}/></Box>
-        <Profile/> 
+          <Box sx={{display:"flex", justifyContent:"end", alignItems:"end",cursor:"pointer"}}><CloseIcon sx={{color:"white", fontSize:"35px", padding:"10px"}} onClick={()=>open[1](false)}/></Box>
+          <Profile/> 
 
-        <List >
+          <List >
 
-        {MenuItem.map((item, index)=>(
-            <ListItem
-            onClick={()=>{
-                open[1](false);
-                nav(item.path);
-            }}
-            sx={{
-              flexDirection:"column",justifyContent:"center", alignItems:"center"
-            }}
-            key={index}
-            >
-              <ListItemText >
-                <Typography sx={{color:loc.pathname === item.path ? 'white' : "#FBFCFC", fontWeight:"bold"}}>{item.name}</Typography>
-              </ListItemText>
-            </ListItem>
-          ))}
-        </List>
+          {MenuItem.map((item, index)=>(
+              <ListItem
+              onClick={()=>{
+                  open[1](false);
+                  nav(item.path);
+              }}
+              sx={{
+                flexDirection:"column",justifyContent:"center", alignItems:"center"
+              }}
+              key={index}
+              >
+                <ListItemText >
+                  <Typography sx={{color:loc.pathname === item.path ? 'white' : "#FBFCFC", fontWeight:"bold",cursor:"pointer"}}>{item.name}</Typography>
+                </ListItemText>
+              </ListItem>
+            ))}
+          </List>
 
-        <IconBox>
-            <Facebook sx={{color:"white",margin:1.5}}/>
-            <Instagram sx={{color:"white",margin:1.5}}/>
-            <LinkedIn sx={{color:"white",margin:1.5}}/>
-            <GitHub sx={{color:"white",margin:1.5}}/>
-        </IconBox>
-            
-        <CVButton/>
+          <IconBox>
+              {
+              icons.map((icon,index)=>(
+                <Link href={icon.link} underline="none" key={index}>
+                  <icon.icon sx={{color:"white",margin:1.5,cursor:"pointer"}}/>
+                </Link>
+              ))
+              }
+          </IconBox>
+              
+          <CVButton/>
         </Box>
 
       </Drawer>
