@@ -3,7 +3,6 @@ import { Typography,Box, Grid, styled, } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import LeftSection from './components/LeftSection';
 import RightSection from './components/RightSection';
-import generateRandom from '../../utils/RandomNumber';
 import animation from '../../Animation/Animation';
 import LoadingScreen from '../../../loading/LoadingScreen';
 

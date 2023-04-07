@@ -1,7 +1,6 @@
 import { styled, Typography,Box} from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import animation from '../../Animation/Animation';
-import generateRandom from '../../utils/RandomNumber';
 import axios from 'axios';
 import LoadingScreen from '../../../loading/LoadingScreen';
 import ErrorScreen from '../../../error/ErrorScreen';

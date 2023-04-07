@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import AboutConponent from './components/AboutComponent';
 import WhatIDo from './components/WhatIDo';
 import FunFact from './components/FunFact';
-import generateRandom from '../../utils/RandomNumber';
 import animation from '../../Animation/Animation';
 import axios from 'axios';
 import LoadingScreen from '../../../loading/LoadingScreen';

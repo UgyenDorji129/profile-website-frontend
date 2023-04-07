@@ -1,7 +1,6 @@
 import { Box, Grid,  Typography, styled } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import Post from './components/Post'
-import generateRandom from '../../utils/RandomNumber';
+import Post from './components/Post';
 import animation from '../../Animation/Animation';
 import axios from 'axios';
 import LoadingScreen from '../../../loading/LoadingScreen';

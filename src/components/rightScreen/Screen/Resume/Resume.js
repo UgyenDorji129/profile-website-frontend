@@ -2,7 +2,6 @@ import { Box, styled, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import Certificate from './components/Certificate';
 import Educations from './components/Educations';
-import generateRandom from '../../utils/RandomNumber';
 import animation from '../../Animation/Animation';
 import axios from 'axios';
 import LoadingScreen from '../../../loading/LoadingScreen';
