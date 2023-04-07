@@ -26,7 +26,6 @@ const DirectionButton = styled(Stack)({
   display:"flex", 
   alignItems:"center", 
   background: theme.palette.primary.main,
-  alignItems:"center",
   color:"white",
   borderRadius:"40px",
   padding:"3px",
