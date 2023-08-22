@@ -33,7 +33,7 @@ const Portfolio = () => {
   var index = 3;
   
   useEffect(()=>{
-    axios.get("https://profile-website-backend-production.up.railway.app/getPortfolio").then((response) => {
+    axios.get("https://profile-u9zd.onrender.com/getPortfolio").then((response) => {
       setResult(response.data.data);
     }).catch((e)=>{
       setError(true);
@@ -54,10 +54,10 @@ const Portfolio = () => {
         <MainBox param={{show:show, index:index}}>
             <Typography textAlign={"start"} variant='h4' fontWeight={"bold"}>Portfolio</Typography>
             <SecondaryBox>
-                <Grid container spacing={5}>
+                <Grid container spacing={2}>
                     {
                         result && result.map((proj, index)=>(
-                            <Grid item xs={12} sm={6} lg={4} key={index}>
+                            <Grid item xs={12} sm={6} lg={4} key={index} >
                                 <Link href={proj.projectUrl} underline="none"><Project proj={proj}/></Link>
                             </Grid>
                         ))

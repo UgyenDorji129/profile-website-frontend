@@ -7,37 +7,37 @@ const DesktopMenuItems = [
     { 
       icon: Home, 
       title:"Home", 
-      sx:{fontSize:"50px", margin:"10px", color:theme.palette.primary.main, cursor:"pointer"}, 
+      sx:{fontSize:"35px", margin:"10px", color:theme.palette.primary.main, cursor:"pointer"}, 
       path: '/' 
     },
     { 
       icon: Person, 
       title:"About", 
-      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
+      sx: {fontSize:"35px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
       path: '/about' 
     },
     { 
       icon: SchoolSharp,
       title:"Resume", 
-      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
+      sx: {fontSize:"35px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
       path: '/resume' 
     },
     { 
       icon: BusinessCenterIcon,
       title:"Portfolio",
-      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
+      sx: {fontSize:"35px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
       path: '/portfolio' 
     },
     { 
       icon: BookIcon, 
       title:"Blog",
-      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
+      sx: {fontSize:"35px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
       path: '/blog' 
     },
     { 
       icon: Mail, 
       title:"Contact",
-      sx: {fontSize:"50px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
+      sx: {fontSize:"35px", margin:"10px", color:theme.palette.primary.main,cursor:"pointer"}, 
       path: '/contact' 
     },
     

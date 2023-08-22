@@ -39,11 +39,11 @@ const Resume = () => {
   }
   
   useEffect(()=>{
-    fetchRequest("https://profile-website-backend-production.up.railway.app/getEducation", setEducation);
-    fetchRequest("https://profile-website-backend-production.up.railway.app/getFrame", setFrame);
-    fetchRequest("https://profile-website-backend-production.up.railway.app/getPrograming", setProg);
-    fetchRequest("https://profile-website-backend-production.up.railway.app/getOtherSkill", setKnow);
-    fetchRequest("https://profile-website-backend-production.up.railway.app/getCertificate", setCerti);
+    fetchRequest("https://profile-u9zd.onrender.com/getEducation", setEducation);
+    fetchRequest("https://profile-u9zd.onrender.com/getFrame", setFrame);
+    fetchRequest("https://profile-u9zd.onrender.com/getPrograming", setProg);
+    fetchRequest("https://profile-u9zd.onrender.com/getOtherSkill", setKnow);
+    fetchRequest("https://profile-u9zd.onrender.com/getCertificate", setCerti);
     setshow(true);
   },[]);
 

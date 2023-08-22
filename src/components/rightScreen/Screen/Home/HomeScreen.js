@@ -26,7 +26,7 @@ const HomeScreen = () => {
   var index = 0;
 
   useEffect(() => {
-    axios.get("https://profile-website-backend-production.up.railway.app/getHome").then((response) => {  
+    axios.get("https://profile-u9zd.onrender.com/getHome").then((response) => {  
     setResult(response.data.data);
     }).catch((e)=>{
       setError(true);
@@ -36,6 +36,7 @@ const HomeScreen = () => {
    
 
   if(error){
+    console.log("THis is error; ", result)
       return <ErrorScreen/>
   }else{
     if(result === null){
